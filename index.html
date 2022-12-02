@@ -75,7 +75,7 @@
                             </div>
                             <div class="tab-contents" id="education">
                                 <ul>
-                                    <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                                    <li><span>UI/UX</span><br>esigning web/App interfaces</li>
                                     <li><span>web Development</span><br> web App  Development</li>
                                     <li><span>App Development</span><br>Building Android/iOS apps</li>
                                 </ul>
@@ -85,6 +85,39 @@
                     </div>
                 </div>
             </div>
+            <!----- services------->
+
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My services</h1>
+                    <div class="services-list">
+                        <div>
+                            <ion-icon name="code"></ion-icon>
+                            <h2>ikrini designer </h2>
+                            <p>Lorem ipsum dolor sit, amet magnam alias necessitatibus aliquid deserunt vel aliquam maiores. Porro, sint!</p>
+                            <a href="#"> leran more </a>
+                        
+                        </div>
+                        <div>
+                            <ion-icon name="crop"></ion-icon>
+                            <h2>ikrini s  </h2>
+                            <p>Lorem ipsum dolor sit, amet magnam alias necessitatibus aliquid deserunt vel aliquam maiores. Porro, sint!</p>
+                            <a href="#"> leran more </a>
+                        
+                        </div>
+                        <div>
+                            <ion-icon name="apps"></ion-icon>
+                            <h2>ikrini app </h2>
+                            <p>Lorem ipsum dolor sit, amet magnam alias necessitatibus aliquid deserunt vel aliquam maiores. Porro, sint!</p>
+                            <a href="#"> leran more </a>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
 
             <script>
                 var tablinks = document.getElementsByClassName("tab-links");
@@ -96,6 +129,8 @@
                     for ( tabcontent of tabcontents){
                         tabcontent.classList.remove("active-tab");
                     }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab")
                         
                 }
             </script>
