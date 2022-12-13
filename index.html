@@ -28,14 +28,16 @@
         <div class="container">
             <nav>
                 <img src="./untitled folder/8f5a4a5caaaabb03f6821af852d99af1.jpg" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Contact</a></li>
+                    <ion-icon class="fas" name="close" onclick="closemenu()"></ion-icon>
 
                 </ul>
+                <ion-icon class="fas" name="menu" onclick="openmenu()"></ion-icon>
             </nav>
             <div class="header-text">
                 <p>ikrini designer</p>
@@ -212,6 +214,16 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab")
 
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
         }
     </script>
 
